@@ -4,7 +4,7 @@
 
 ##### Nova Card Preview
 
-![Resource Generator Tool](https://user-images.githubusercontent.com/3589377/52174968-74d4df00-279c-11e9-8538-87aac6721e8b.png)
+![Captura de pantalla 2019-04-30 a las 18 19 08](https://user-images.githubusercontent.com/3589377/56976983-7718c080-6b74-11e9-8956-573d9915f6f9.png)
 
 
 ### Installation
