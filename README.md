@@ -1,6 +1,6 @@
 # Nova Card Extended
 
-[![Total Downloads](https://img.shields.io/packagist/dt/cloudstudio/time-tracker.svg?style=flat-square)](https://packagist.org/packages/cloudstudio/time-tracker)
+[![Total Downloads](https://img.shields.io/packagist/dt/cloudstudio/card-extended.svg?style=flat-square)](https://packagist.org/packages/cloudstudio/card-extended)
 
 ##### Nova Card Preview
 
@@ -12,7 +12,7 @@
 You can install the package in to a Laravel app that uses [Nova](https://nova.laravel.com) via composer:
 
 ```bash
-composer require cloudstudio/nova-card-extended
+composer require cloudstudio/card-extended
 ```
 
 Next up, you must register the field with Nova. This is typically done in the resource file.
