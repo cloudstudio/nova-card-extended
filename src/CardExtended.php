@@ -24,13 +24,7 @@ class CardExtended extends Card
         //
     }
 
-    public function data($data)
-    {
-        return $this->withMeta(['data' => $data]);
-    }
-
-
-    public function view($view, $data)
+    public function view($view, $data = null)
     {
         $renderView = view($view, ['data' => $data])->render();
         return $this->withMeta(['view' => $renderView]);
