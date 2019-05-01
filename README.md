@@ -39,7 +39,6 @@ public function cards(Request $request)
 First parameter is a typical blade view
 
 ```php
-
 resurces/views/cards/text.blade.php
 
 ```
