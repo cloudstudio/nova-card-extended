@@ -26,7 +26,11 @@ use Cloudstudio\CardExtended\CardExtended;
 public function cards(Request $request)
 {
     return [
-        (new CardExtended())->view('cards.text', $user)
+        (new CardExtended())
+            ->view('cards.text')
+            ->data(User::find(1))
+            ->onlyOnDetail()
+            ->width('full'),
     ];
 }
 

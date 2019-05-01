@@ -1,19 +1,19 @@
 <template>
-  <div v-html="view"></div>
+  <div v-html="renderview"></div>
 </template>
 
 <script>
 export default {
-  props: ["card", "view"],
+  props: ["card", "renderview"],
 
   data() {
     return {
-      view: null
+      renderview: null
     };
   },
 
   mounted() {
-    this.view = this.card.view;
+    this.renderview = this.card.renderview;
   }
 };
 </script>

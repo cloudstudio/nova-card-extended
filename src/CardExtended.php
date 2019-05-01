@@ -13,21 +13,26 @@ class CardExtended extends Card
      */
     public $width = '1/3';
 
+    public $view;
 
-    /**
-     * Perform any tasks that need to happen when the tool is booted.
-     *
-     * @return void
-     */
-    public function boot()
+    public $data;
+
+
+    public function data($data)
     {
-        //
+        $this->data = $data;
+        return $this;
     }
 
-    public function view($view, $data = null)
+    public function view($view)
     {
-        $renderView = view($view, ['data' => $data])->render();
-        return $this->withMeta(['view' => $renderView]);
+        $this->view = $view;
+        return $this;
+    }
+
+    public function renderView()
+    {
+        return view($this->view, ['data' => $this->data])->render();
     }
 
     /**
@@ -38,5 +43,14 @@ class CardExtended extends Card
     public function component()
     {
         return 'card-extended';
+    }
+
+    public function jsonSerialize()
+    {
+        return array_merge([
+            'data' => $this->data,
+            'view' => $this->view,
+            'renderview' => $this->renderView()
+        ], parent::jsonSerialize());
     }
 }
