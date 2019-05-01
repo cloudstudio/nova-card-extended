@@ -2,10 +2,6 @@
 
 [![Total Downloads](https://img.shields.io/packagist/dt/cloudstudio/card-extended.svg?style=flat-square)](https://packagist.org/packages/cloudstudio/card-extended)
 
-##### Nova Card Preview
-
-![Captura de pantalla 2019-04-30 a las 18 19 08](https://user-images.githubusercontent.com/3589377/56976983-7718c080-6b74-11e9-8956-573d9915f6f9.png)
-
 
 ### Installation
 
@@ -64,6 +60,12 @@ Example view
 </div>
 
 ```
+
+##### Nova Card Preview
+
+![Captura de pantalla 2019-04-30 a las 18 19 08](https://user-images.githubusercontent.com/3589377/56976983-7718c080-6b74-11e9-8956-573d9915f6f9.png)
+
+( Preview with this blade )
 
 Second parameter is the data, you can use strings, number, array, collection...
 
